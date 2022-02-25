@@ -4,7 +4,7 @@
 //Step 2: Create a variable name countTheLetter and set it to 0.
 //Step 3: Create a for loop that will loop through the string(str)
 //Step 4: Create a if statement that will check to see if the string is equal to our second parameter which is letter.  If it is then update the countTheLetter variable by 1.  Also I use the charAt() method to or return the character at a specified index/position in a string
-//Step 5: Return the countTheLetter variable and print to console "letterCounter("live simply and be grateful", "e") which will give me "3"
+//Step 5: Return the countTheLetter variable once it loops over the whole string and print to console "letterCounter("live simply and be grateful", "e") which will give me "3"
 
 
 function letterCounter(str, letter) {
