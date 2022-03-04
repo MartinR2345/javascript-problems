@@ -4,7 +4,7 @@
 
 
 function sortedArray(myArray){
-    let newArray = myArray.sort().reverse();
+    let newArray = myArray.sort();
     return newArray;
 }
 
