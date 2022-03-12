@@ -17,4 +17,4 @@ const person = {
     
   }
   
-  console.log(deleteOne(person, 'firstName'));
+  console.log(removeProperty (person, 'firstName'));
