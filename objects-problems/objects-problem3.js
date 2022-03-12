@@ -3,3 +3,16 @@
 //Step 3: I'm going to return and use the Object.keys() method along with the length property to get the length of this object.  This will return an array of a given object's list property names and the length property returns the number of elements in that array.  
 //Step 4: Print to console the function calculate 
 
+const itemsObj = {
+    soda: "pepsi",
+    cake: "chocolate",
+    snack: "oreos"
+  }
+  
+  function calculate(object) {
+  
+    return Object.keys(object).length;
+  
+  }
+  
+  console.log(calculate(itemsObj));
