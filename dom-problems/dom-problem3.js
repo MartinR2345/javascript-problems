@@ -17,9 +17,10 @@ function myFunction() {
     const selectedOption = brandsOfLaptop.options[brandsOfLaptop.selectedIndex].value;
 
     let stringOfOptions = "";
-    document.getElementById("demo").innerHTML = stringOfOptions
 
     for (let i = 0; i < brandsOfLaptop.length; i++) {
         stringOfOptions = stringOfOptions + brandsOfLaptop.options[i].text + ", ";
     }
+
+    document.getElementById("demo").innerHTML = stringOfOptions
 }
