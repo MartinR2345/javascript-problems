@@ -15,4 +15,4 @@ const itemsObj = {
   
   }
   
-  console.log(calculate(itemsObj));
+  console.log(calculate(itemsObj)); //This prints "3" items
