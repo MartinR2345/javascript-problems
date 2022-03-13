@@ -3,3 +3,20 @@
 //Step 3: I am going to return my first parameter (obj) that been assigned to hasOwnProperty method which holds my second parameter (item).  Basically this will return a boolean indicating whether the object has the specified property as its own property
 //Step 4: Print to the console my function checkItem
 
+const bottle = {
+    name : 'Pepsi',
+    size : 'small',
+    year : 1893,
+    type : 'hot chocolate',
+    temperature : 'warm',
+    condition : 'new',
+   
+};
+
+
+
+function checkItem(obj, item) {
+    return obj.hasOwnProperty(item);
+};
+
+console.log(checkItem(bottle, "temperature")); 
