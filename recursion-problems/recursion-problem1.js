@@ -4,3 +4,14 @@
 //Step 2: I'm going to use an if statement to prevent infinite recursion and to check if my parameter (num) is equal to 0 then return 1.  If the (num) is positive or greater then the program will loop itself by decreasing the number until that number becomes 1.  When the number reaches 0, 1 is returned.
 
 
+function factorial(num) { 
+    if (num === 0){
+      return 1;
+    }
+    
+    return num * factorial(num - 1);       
+  }
+  
+  console.log(factorial(3));
+
+  //This factorial of 3 is equal to  1 * 2 * 3 = 6
