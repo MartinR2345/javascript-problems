@@ -1,12 +1,11 @@
-//Step 1: Create a function name joinTogether that takes in an array of elements. I named this array (arrayOfColors)
-//Step 2: Create a variable called commaArray and assigned my parameter(arrayOfColors) with the join() method. This join() method will create and return a new string by concatenating all the elements in an array with a comma.
-//Step 3: Return my variable (commaArray)
-//Step 4: Execute my joinTogether function as it pass in my arrayofcolors parameter and print to the console.
+//Step 1: Create a function name joinTogether that takes in an array of color elements/items.
+//Step 2: Inside this function, I return the arrOfColorItems with the join() method that accepts an optional argument separator which is the comma (,) as the default value. 
+//Step 3: Why? Because in order to return one string separated by a comma with a space after the comma, the join() method allows me to create and return a new string by concatenating all the elements in the arrOfColorItems and insert a comma in between the string elements.
+//Step 4: Print to the console the function joinTogether with the value of arrOfColorItems.
 
 
-function joinTogether(arrayOfColors){
-    let commaArray = arrayOfColors.join(',');
-    return commaArray;
+function joinTogether(arrOfColorItems){
+    return arrOfColorItems.join(',');
 }
 
 console.log(joinTogether(["Red", "Green", "White", "Black"]));
