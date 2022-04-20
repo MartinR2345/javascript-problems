@@ -1,19 +1,19 @@
-//Step 1: Create a function name removeDuplicates that takes one parameter, an array (arr)
-//Step 2: Create an empty array use as a default reference
-//Step 3: Use a for loop to loop through each and every element of my array
-//Step 4: Create an if statement that will check if the specialArray includes or has that element or not.I would be using the includes() method. If not, then if the condition becomes true, then we push that element into the special array with the push() method
-//Step 5: Return my specialArray variable
-//Step 6: Print to the console the function removeDuplicates 
+//Step 1: I created a function called removeDuplicates that takes in an array of items,
+//Step 2: The first thing that I'm doing is creating a variable called "uniqueValuesArr". This is where I'll be storing all the unique values
+//Step 3: The second thing I'm doing is creating a loop and in this loop, I'm looping through each item in the array Why?
+//Step 4: To check and see if it's not already included in my "uniqueValuesArr" because if it's not that means it is unique which is then why I push it into my "uniqueValuesArr" 
+//Step 5: Return my uniqueValuesArr variable
+//Step 6: Print to the console the function removeDuplicates with the value of arrayOfNums
 
-function removeDuplicates(arr) {
-    let specialArray = [];
+function removeDuplicates(arrOfItems) {
+    let uniqueValuesArr = [];
 
-    for(let i = 0; i < arr.length; i++) {
-        if(!specialArray.includes(arr[i])){
-            specialArray.push(arr[i]);
+    for(let i = 0; i < arrOfItems.length; i++) {
+        if(!uniqueValuesArr.includes(arrOfItems[i])){
+            uniqueValuesArr.push(arrOfItems[i]);
         };
     };
-    return specialArray;
+    return uniqueValuesArr;
 };
 
 const arrayOfNums = [1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6]
