@@ -1,11 +1,11 @@
-//Step 1: Create a function name (sortedArray) that takes in an array which I named as (myArray)
-//Step 2: Create a variable name (newArray) and assigned it to my parameter(myArray) and used the sort() method to sort out the elements of (myArray) and return the sorted array
-//Step 3: Execute the function sortedArray to print to the console
+//Step 1: Create a function name (sortedNumbers) that takes in an array of unsorted numbers (arrOfUnsortedNumbers)
+//Step 2: Inside this function, I returned the arr with the sort() method and the reverse() method
+//Step 3: Why? Because the original array(arr) are out of place, the sort() method sorts and changes the positions of the elements in the original array putting those elements in place. The reverse() method basically makes the first array element becomes the last, and the last array element becomes the first.
+//Step 3: Then print to the console my function sortedNumbers with the value of arr 
 
 
-function sortedArray(myArray){
-    let newArray = myArray.sort();
-    return newArray;
+function sortNumbers(arr){
+    return arr.sort().reverse();
 }
 
-console.log(sortedArray([-3,8,7,6,5,-4,3,2,1]));
+console.log(sortNumbers([-3,8,7,6,5,-4,3,2,1]));
