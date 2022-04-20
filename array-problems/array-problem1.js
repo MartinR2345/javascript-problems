@@ -1,7 +1,7 @@
-//Step 1: Create a function name getArrItems that takes two parameters an array and a number (n)
-//Step 2: Create a variable name slicedArray and assigned my array(fruits) with the slice method to return selected elements in an array as a new array.  This slice() method selects from a given start which is 0 up to a given end which is 2.
-//Step 3: Returned the variable "sliceArray"
-//Step 4: Execute the function firstTwo (['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'], 2) to print to the console.
+//Step 1: Create a function name getArrItems that takes two parameters an array (arr) and a number (n)
+//Step 2: Inside this function, I returned the arr with the slice method().  This slice() method basically starts at the given start index of 0 which will be the first item and it goes up to "n" but it doesn't include "n".
+//Step 3: Why? Because arrays are zero based index meaning the first item starts at index 0. It goes up to "2" but doesn't include "2".
+//Step 4: Execute the function getArrItems (['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'], 2) to print to the console.
 
 function getArrItems(arr, n){
     return arr.slice(0, n);
