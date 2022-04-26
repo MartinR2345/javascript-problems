@@ -1,21 +1,20 @@
-//Goal: What is the objective? To write a function that counts the number of vowels withing the string
+//Goal: What is the objective? To write a function that counts the number of vowels within the string
 
 //Step 1: Create a function name vowelsCount that accepts a String(str) as a parameter
-//Step 2: Create a variable name countTheVowels and set it to 0.  
-//Step 3: Create an array name vowelsArray that will store the vowels in one place
-//Step 4: Create a for of loop so it can loop and look at every character of the string(str) and check to see whether or not it is a vowel.
-//Step 5: Create an if statement to check whether the current character is a vowel or not. Also I use the includes() method to check if my vowelsArray contains the characters I'm looping over in the loop.  Also I use the .toLowerCase() method to make sure it match vowelsArray variable. If the character is a vowel then "countTheVowel" will be updated by 1.
-//Step 6: Return the variable countTheVowels and print to console vowelCount("anaemia") which will give me 5
+//Step 2: Create a variable name currentVowelCount and set it to 0.  This will keep track of counting the vowels after every iteration from my loop
+//Step 3: Create an variable name vowelsArray that will store the vowels in one place.
+//Step 4: Create a loop that will inspect each character of my string(str). Why? This is checking to see if any letters in my string are a vowel or not. If it is, then currentVowelCount will be updated by 1.
+//Step 5: Return the variable currentVowelCount and print to console my function vowelCount("anaemia") which will give me 5 vowels.
 
 
 function vowelsCount(str){
-    let countTheVowels = 0;
+    let currentVowelCount = 0;
     const vowelsArray = ['a', 'e', 'i', 'o', 'u'];
-    for (let vowel of str){
-        if (vowelsArray.includes(vowel.toLowerCase()))
-        countTheVowels ++
+    for (let arrOfLetters of str){
+        if (vowelsArray.includes(arrOfLetters.toLowerCase()))
+        currentVowelCount ++
     }
-    return countTheVowels;
+    return currentVowelCount;
 }
 
 console.log(vowelsCount("anaemia"));
