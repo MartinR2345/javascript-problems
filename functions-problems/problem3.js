@@ -1,19 +1,19 @@
 //Goal: What is the objective? Write a function that will count the number of occurrences of the specified letter within the string.
 
-//Step 1: Create a function name letterCounter that accepts two arguments/parameters string(str) and letter(letter)
-//Step 2: Create a variable name countTheLetter and set it to 0.
-//Step 3: Create a for loop that will loop through the string(str)
-//Step 4: Create a if statement that will check to see if the string is equal to our second parameter which is letter.  If it is then update the countTheLetter variable by 1.  Also I use the charAt() method to or return the character at a specified index/position in a string
-//Step 5: Return the countTheLetter variable once it loops over the whole string and print to console "letterCounter("live simply and be grateful", "e") which will give me "3"
+//Step 1: Create a function name countLetter that accepts two arguments/parameters string(str) and letter(letter)
+//Step 2: Create a variable name letterCount and set it to 0. This will keep track of counting the letters after every iteration from my
+//Step 3: Create a loop that will inspect each letter one by one in the string(str)? Why? This loop is checking to see if letter "e" is in the string at a specified index/position. If it is then update "letterCount" by one.
+//Step 4: Return the letterCount and  print to console my function countLetter("live simply and be grateful", "e") which will give me "3"
 
 
-function letterCounter(str, letter) {
-    let countTheLetters = 0;
+function countLetter(str, letter){
+    let letterCount = 0;
     for (let i = 0; i < str.length; i++) {
         if (str.charAt(i) === letter){
-            countTheLetters ++
+            letterCount ++
         }
     }
-    return countTheLetters;
+    return letterCount;
 }
-console.log(letterCounter("live simply and be grateful", "e"));
+console.log (countLetter("live simply and be grateful", "e"));
+
