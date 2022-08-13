@@ -1,11 +1,10 @@
-//Step 1: Create an array of people objects with firstName, lastName and age
-//Step 2: Create a function name displayFirstAndLastNames that takes in an array of objects which I named as (arrOfObjects)
-//Step 3: Then I take the parameter (arrOfArray) and use the for each() method with it.  This will loop over the elements of my array. So whatever function I pass in, that function will be called once per item, where each item will be passed into the function automatically.
-//Step 4: Now inside the parenthesis() in my foreach property, this expects me to pass in a callback.  I will use an anonymous function expression that will take in one parameter I called (give)
-//Step 5: Print to console the parameter (give) first and last names of all the people of my array of objects 
+//Step 1: I create a sample array of people objects with firstName, lastName and age as key-value pairs
+//Step 2: I created a function name displayNameInfo that takes in an array of objects "arrOfObjects"
+//Step 3: Inside this function, I'm using the forEach() method to loop through each element inside of my array of Objects "arrOfObjects" 
+//Step 4: I'm logging to console the first and last names of my array of people's object
 
 
-const people = [
+const arrOfPeople = [
     {
         firstName : 'Martin',
         lastName :   'Jacobs',
@@ -24,9 +23,9 @@ const people = [
     
 ]
 
-function displayFirstAndLastName(arrOfObjects) {
-    arrOfObjects.forEach(function(give) {
+const displayNameInfo = (arrOfObjects) => {
+    arrOfObjects.forEach((give) => {
       console.log(give.firstName + ' ' + give.lastName)
     });
 }
-displayFirstAndLastName(people);
+displayNameInfo(arrOfPeople);
