@@ -1,6 +1,7 @@
 //Step 1: I created a function called (sortNumbers) that takes in an array of numbers (arrOfNums)
 //Step 2: And inside this function, I'm returning the arr with the sort() method to sort my array (arrOfNums) based on the return values of this (a, b) comparison function
-//Step 3: I'm checking to see if a is greater than b and if it is, return a positive number and place "b" before "a".  If a is less than b then return a negative number and placed "a" before "b". The sort() method  will sorts and change the positions of the elements in the original array putting those elements in place. 
+//Step 3: I'm checking to see if a is greater than b and if it is, return a positive number and place "b" before "a".  If a is less than b then return a negative number and placed "a" before "b". 
+//Step 4: Return 0 means the position of the compared elements doesn't change.  The sort() method will sort and change the positions of the elements in the original array putting those elements in place. 
 //Step 4: Then log to the console of my function sortNumbers. 
 
 const sortNumbers = (arrOfNums) => {
