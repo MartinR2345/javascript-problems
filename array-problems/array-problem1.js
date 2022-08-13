@@ -3,7 +3,7 @@
 //Step 3: Why? Because arrays are zero based index meaning the first item starts at index 0. It goes up to "2" but doesn't include "2".
 //Step 4: Execute the function getArrItems (['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'], 2) to print to the console.
 
-function getArrItems(arrOfItems, n){
+function getArrItems = (arrOfItems, n) => {
     return arrOfItems.slice(0, n);
 }
 
