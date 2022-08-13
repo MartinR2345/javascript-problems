@@ -1,7 +1,7 @@
-//Step 1: Declare an object name items and this object has three(3) items
-//Step 2: Create a function name calculate that accepts an object as a parameter and tells you the length (tells you how many items are in it) of the object
-//Step 3: I'm going to return and use the Object.keys() method along with the length property to get the length of this object.  This will return an array of a given object's list property names and the length property returns the number of elements in that array.  
-//Step 4: Print to console the function calculate 
+//Step 1: I declared a sample object name "itemsObj" and this object has three key-value pairs
+//Step 2: I created a function name findObjLength that takes in an object(obj) as a parameter
+//Step 3: Inside this function I'm calculating or counting how many properties are inside of item's object with the object.keys method and the length method then returning it to the console.
+//Step 4: Log to the console of my function "findObjLength" and sample object (itemsObj)
 
 const itemsObj = {
     soda: "pepsi",
@@ -9,10 +9,8 @@ const itemsObj = {
     snack: "oreos"
   }
   
-  function calculate(object) {
-  
+  const findObjLength = (object) => {
     return Object.keys(object).length;
-  
   }
   
-  console.log(calculate(itemsObj)); //This prints "3" items
+  console.log(findObjLength(itemsObj)); //This prints "3" items
