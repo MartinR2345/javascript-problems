@@ -1,28 +1,28 @@
 //Objective: Write a function to sort the following array of objects by title value
 
-//Step 1: Create an array of objects name (books) 
-//Step 2: Write a function name sortObjs that takes in two parameters/ two arguments (a) & (b).  These are two elements from the array and it will cycle through my array.  This needs to return a negative number, a positive number or zero. 
-//Step 3: In order for me to use the sort() method, I must use an if statement to help me compare the first parameter(a) and the second parameter (b) inside my array of objects (books). If the first parameter/argument (a) should appear before the second parameter/argument (b) then return a number less than zero, a negative number (-1) Now because I’m trying to sort by title value, I must check to see the title value of whatever is passed in from the first parameter(a) is less than the title value of the second parameter(b) and if it is less than then return negative -1. If the first parameter/argument (a) should appear after the second parameter/argument (b) then return a number less than zero, a positive number (1). If the first parameter (a) and the second parameter (b) are equal then return a zero (0)
-//Step 4: Print to the object (books) with the sort method applied holding the function (sortObj). This sort method allows me to sort elements of an array in place and even sort elements based on the return value of my (sortObj) function 
+//Step 1: I create a sample array of objects name (books) 
+//Step 2: I'm using the sort() method to sort my array of objects(books) based on the return values of this (a, b) comparison function.
+//Step 3: I'm checking to see if "a" is greater than "b" and if it is then return a positive number and placed "b" title before "a" title
+//Step 4: I'm also checking to see if "a" is less than "b" and if it is then return a negative number and placed "a" title before "b"title
+//Step 5: Return 0 means the position of the compared elements doesn't change
+//Step 6: Log to the console of my sample array of objects (books)
 
 
 const books = [
-    { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
-    { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
-    { author:'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
-  ];
-  
-  function sortObjs (a, b) {
-      if (a.title < b.title) {
-        return -1;
-      }                              
-      else if (a.title > b.title) {             
-        return 1;
-      }
-      else {
-          return 0;
-      }                               
-  }
-  
-  console.log(books.sort(sortObjs)); 
+  { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
+  { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
+  { author:'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
+];
+
+books.sort((a, b) => {
+   if (a.title > b.title) {
+      return 1;
+    }                              
+    if (a.title < b.title) {             
+      return -1;
+    }
+     return 0
+});
+
+console.log(books); 
   
