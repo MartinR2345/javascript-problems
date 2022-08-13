@@ -4,8 +4,8 @@
 //Step 4: Print to the console the function joinTogether with the value of arrOfColorItems.
 
 
-function joinTogether(arrOfColorItems){
-    return arrOfColorItems.join(',');
+function joinTogether  (arrOfItems) =>{
+    return arrOfItems.join(',');
 }
 
 console.log(joinTogether(["Red", "Green", "White", "Black"]));
