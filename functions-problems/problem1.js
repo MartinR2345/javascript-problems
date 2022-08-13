@@ -6,7 +6,7 @@
 //Step 4: The third thing I'm doing is creating a loop. Why? I'm checking to see if the first word of my arrOfWords length is greater than the length of longestWord then update longestWord.
 //Step 6: Return longestWord variable then print to the console findLongestWord("I am grateful") which will give me "grateful" as the longest word
 
-function findLongestWord(str){
+const findLongestWord = (str) => {
     let arrOfWords = str.split(" ");
     let longestWord = "";
     for(let i = 0; i < arrOfWords.length; i++){
